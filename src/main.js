@@ -9,11 +9,13 @@ window.onload = () => {
   const accordion = document.getElementsByClassName("tab");
 
   burgerBtn.onclick = function () {
+    burgerBtn.classList.toggle("active");
     hideMenu();
   };
 
   menuMobile.onclick = function () {
     hideMenu();
+    burgerBtn.classList.remove("active");
   };
 
   function hideMenu() {
